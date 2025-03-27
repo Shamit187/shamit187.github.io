@@ -1,74 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Portfolio</title>
-  <link href="index.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Portfolio</title>
+    <link href="index.css" rel="stylesheet" />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=attach_file" />
 </head>
-<body class="relative bg-[#FDFD96] text-black">
 
-  <!-- Tilted Black Strips -->
-  <div class=""></div>
-  <div class=""></div>
+<body>
 
-  <!-- Top Section: About Me + Image -->
-  <section class="flex flex-col" id="about">
-    <!-- Image -->
-    <div class="w-full">
-      <img src="photos/me.png" alt="Your Photo" class="w-96">
-    </div>
+    <!-- Tilted Black Strips -->
+    <div class=""></div>
+    <div class=""></div>
 
-    <!-- About Me Text -->
-    <div class="w-full">
-      <p class="text-block">This is a placeholder for your bio or description.</p>
-    </div>
-  </section>
+    <!-- Top Section: About Me + Image -->
+    <section class="flex flex-col md:flex-row w-screen h-full items-center justify-between pt-10 px-20" id="about">
+        <!-- Image -->
+        <div>
+            <img src="photos/me.png" alt="Your Photo" class="w-96">
+        </div>
+        <!-- About Me Text -->
+        <div class="text-right lexend-mega space-y-4">
+            <p>
+                Hi there! I'm
+                <span
+                    class="font-bold text-[var(--purple-plum)] tracking-[-0.15rem] inline-block transform scale-150 -translate-x-10 pl-13">
+                    Shamit Fatin
+                </span>
+            </p>
+            <p>
+                I'm a
+                <span class="text-[var(--bittersweet)] pl-2 mr-2 border-2 border-black shadow-[4px_4px_0_0_black]">
+                    first-year PhD student
+                </span>
+                at the
+                <span class="font-bold tracking-[-0.15rem]">
+                    University of Utah
+                </span>, working under
+                <span class="font-bold text-[var(--hot-pink)] bg-black pl-1 m-2 inline-block transform -rotate-3">
+                    Professor Anna Fariha
+                </span>. My research dives into the realm of
+                <span class="font-bold text-[var(--purple-plum)]">
+                    databases
+                </span> and
+                <span class="font-bold text-[var(--hot-pink)]">
+                    machine learning
+                </span>.
+            </p>
+            <p>
+                I completed my undergrad in Computer Science and Engineering at
+                <span
+                    class="font-bold text-[var(--bittersweet)] pl-1 mr-2 border-2 border-black shadow-[4px_4px_0_0_black]">
+                    BUET
+                </span>, where I also worked as a research assistant
+            </p>
+            <p>
+                Outside the academic grind, I'm into
+                <span
+                    class="font-bold text-[var(--hot-pink)] tracking-[-0.15rem] inline-block transform translate-y-1 mr-2">
+                    music
+                </span>,
+                <span
+                    class="font-bold text-[var(--purple-plum)] tracking-[-0.15rem] inline-block transform scale-110 mr-2">
+                    anime
+                </span>,
+                <span
+                    class="font-bold text-[var(--light-coral)] tracking-[-0.15rem] inline-block transform rotate-5 mr-1">
+                    games
+                </span>, and
+                <span class="font-bold text-[var(--goldenrod)] tracking-[-0.15rem] inline-block bg-black pl-1 pr-2 ">
+                    art
+                </span>
+            </p>
+        </div>
 
-  <!-- Publications Section -->
-  <section class="" id="publications">
-    <h2 class="">Publications</h2>
-    <div class="">
 
-      <!-- Vertical Line -->
-      <div class=""></div>
 
-      <!-- Entries -->
-      <div class="">
-        <div class=""></div>
-        <p class="">Publication 1</p>
-      </div>
+    </section>
 
-      <div class="">
-        <div class=""></div>
-        <p class="">Publication 2</p>
-      </div>
+    <section class="publication-section" id="publications">
+        <h2 class="publication-title">Publications</h2>
+        <div class="publication-list">
 
-      <!-- More can go here -->
-    </div>
-  </section>
+        </div>
+    </section>
 
-  <!-- Projects Section -->
-  <section class="" id="projects">
-    <h2 class="">Projects</h2>
-    <div>
-      <div class="">
-        <h3 class="">Project Title 1</h3>
-        <p class="">Short description of project.</p>
-      </div>
+    <!-- Projects Section -->
+    <section class="" id="projects">
+        <h2 class="">Projects</h2>
+        <div>
+            <div class="">
+                <h3 class="">Project Title 1</h3>
+                <p class="">Short description of project.</p>
+            </div>
 
-      <div class="">
-        <h3 class="">Project Title 2</h3>
-        <p class="">Short description of project.</p>
-      </div>
-    </div>
-  </section>
+            <div class="">
+                <h3 class="">Project Title 2</h3>
+                <p class="">Short description of project.</p>
+            </div>
+        </div>
+    </section>
 
-  <script src="index.js"></script>
+    <!-- Link Script -->
+    <script src="show_abstract.js"></script>
 </body>
+
 </html>
