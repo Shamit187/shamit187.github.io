@@ -1,13 +1,75 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./index.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Portfolio</title>
+  <link href="index.css" rel="stylesheet" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<body class="relative bg-[#FDFD96] text-black">
+
+  <!-- Tilted Black Strips -->
+  <div class="tilt-strip-top"></div>
+  <div class="tilt-strip-bottom"></div>
+
+  <!-- Top Section: About Me + Image -->
+  <section class="section-container flex flex-col md:flex-row items-center justify-between" id="about">
+    <!-- Image -->
+    <div class="w-full md:w-1/2 flex-center md:order-1 order-2 mt-8 md:mt-0">
+      <img src="photos/me.png" alt="Your Photo" class="w-96 border-2 border-black shadow-[6px_6px_0_0_black]">
+    </div>
+
+    <!-- About Me Text -->
+    <div class="w-full md:w-1/2 md:order-2 order-1">
+      <h1 class="section-header">About Me</h1>
+      <p class="text-block">This is a placeholder for your bio or description.</p>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section class="section-container bg-[#FCDFFF]" id="publications">
+    <h2 class="section-header">Publications</h2>
+    <div class="relative pl-12">
+
+      <!-- Vertical Line -->
+      <div class="neobrut-line left-4"></div>
+
+      <!-- Entries -->
+      <div class="mb-12 relative">
+        <div class="neobrut-dot left-0 top-1"></div>
+        <p class="text-block">Publication 1</p>
+      </div>
+
+      <div class="mb-12 relative">
+        <div class="neobrut-dot left-0 top-1"></div>
+        <p class="text-block">Publication 2</p>
+      </div>
+
+      <!-- More can go here -->
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section-container bg-[#BAFCA2]" id="projects">
+    <h2 class="section-header">Projects</h2>
+    <div>
+      <div class="project-card">
+        <h3 class="text-xl font-semibold lexend-mega">Project Title 1</h3>
+        <p class="text-block">Short description of project.</p>
+      </div>
+
+      <div class="project-card">
+        <h3 class="text-xl font-semibold lexend-mega">Project Title 2</h3>
+        <p class="text-block">Short description of project.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="index.js"></script>
 </body>
 </html>
