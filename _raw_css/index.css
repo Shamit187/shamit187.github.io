@@ -76,8 +76,12 @@
     }
 
     body {
-        @apply bg-[var(--pastel-yellow)] text-black font-sans leading-relaxed;
+        @apply bg-[var(--pastel-yellow)] text-black font-sans leading-relaxed overflow-x-hidden;
         font-family: "Public Sans", sans-serif;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
     }
 }
 
@@ -119,4 +123,49 @@
     .publication-abstract {
         @apply transition-all duration-500 ease-in-out opacity-0;
     }
+
+    .project-section {
+        @apply w-screen bg-[var(--crystal)] flex flex-col px-20 py-10;
+    }
+
+    .project-title {
+        @apply text-3xl mb-6;
+        font-family: "Lexend Mega", sans-serif;
+    }
+
+    .project-list {
+        @apply flex flex-col gap-4;
+    }
+
+    .project-card {
+        @apply p-4 border-2 border-black shadow-[4px_4px_0_0_black] bg-[var(--mint-snow)] cursor-pointer;
+    }
+
+    .project-name {
+        @apply font-bold text-lg;
+    }
+
+    .project-tech {
+        @apply italic;
+    }
+
+    .project-detail {
+        @apply transition-all duration-500 ease-in-out opacity-0 max-h-0 overflow-hidden mt-4;
+    }
+
+    .clickable-icon {
+        @apply flex items-center justify-center border-2 border-black shadow-[4px_4px_0_0_black] transition-all duration-150 ease-in-out;
+
+        /* Optional cursor */
+        cursor: pointer;
+    }
+
+    .clickable-icon:active {
+        transform: scale(0.95) translate(2px, 2px);
+        box-shadow: none;
+    }
+
+    .clickable-icon:hover {
+        transform: scale(1.05) rotate(-4deg);
+      }
 }

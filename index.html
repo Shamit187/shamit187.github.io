@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Portfolio</title>
+    <title>Shamit Fatin</title>
     <link href="index.css" rel="stylesheet" />
 
     <!-- Fonts -->
@@ -14,7 +14,8 @@
         href="https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=attach_file" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=share" /> -->
 </head>
 
 <body>
@@ -26,9 +27,50 @@
     <!-- Top Section: About Me + Image -->
     <section class="flex flex-col md:flex-row w-screen h-full items-center justify-between pt-10 px-20" id="about">
         <!-- Image -->
-        <div>
+        <div class="relative w-96 h-auto">
+            <!-- Main Image -->
             <img src="photos/me.png" alt="Your Photo" class="w-96">
+
+            <!-- Brutalist squares with randomized static layout -->
+            <!-- Twitter -->
+            <a href="https://twitter.com/yourhandle" target="_blank"
+                class="absolute bottom-6 left-2 w-12 h-12 bg-[var(--green-sheen)]  clickable-icon">
+                <img src="icons/twitter.png" alt="Twitter" class="w-6 h-6" />
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/yourhandle" target="_blank"
+                class="absolute bottom-2 left-16 w-10 h-10 bg-[var(--bittersweet)]  clickable-icon">
+                <img src="icons/linkedin.png" alt="LinkedIn" class="w-6 h-6" />
+            </a>
+
+            <!-- CV -->
+            <a href="your-cv.pdf" target="_blank"
+                class="absolute bottom-8 left-28 w-8 h-8 bg-[var(--goldenrod)]  clickable-icon">
+                <img src="icons/cv.png" alt="CV" class="w-5 h-5" />
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:your@email.com"
+                class="absolute bottom-4 left-42 w-14 h-14 bg-[var(--hot-pink)]  clickable-icon">
+                <img src="icons/email.png" alt="Email" class="w-7 h-7" />
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/yourhandle" target="_blank"
+                class="absolute bottom-0 left-58 w-10 h-10 bg-[var(--pale-mauve)]  clickable-icon">
+                <img src="icons/github.png" alt="GitHub" class="w-6 h-6" />
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/yourhandle" target="_blank"
+                class="absolute bottom-7 left-72 w-16 h-16 bg-[var(--crystal)]  clickable-icon">
+                <img src="icons/instagram.png" alt="Instagram" class="w-8 h-8" />
+            </a>
+
         </div>
+
+
         <!-- About Me Text -->
         <div class="text-right lexend-mega space-y-4">
             <p>
@@ -96,23 +138,16 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="" id="projects">
-        <h2 class="">Projects</h2>
-        <div>
-            <div class="">
-                <h3 class="">Project Title 1</h3>
-                <p class="">Short description of project.</p>
-            </div>
-
-            <div class="">
-                <h3 class="">Project Title 2</h3>
-                <p class="">Short description of project.</p>
-            </div>
+    <section class="project-section" id="projects">
+        <h2 class="project-title">Projects</h2>
+        <div class="project-list">
+            <!-- JS will inject project cards here -->
         </div>
     </section>
 
     <!-- Link Script -->
     <script src="show_abstract.js"></script>
+    <script src="show_project.js"></script>
 </body>
 
 </html>
