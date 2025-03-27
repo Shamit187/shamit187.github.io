@@ -3,67 +3,63 @@
 @tailwind components;
 @tailwind utilities;
 
-/* === Font Families === */
-.lexend-mega {
-  font-family: "Lexend Mega", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+/* 
+  Add color variables in :root so they're accessible throughout 
+  your project. The names below are best guesses—feel free to 
+  adjust them to match your branding or naming conventions.
+*/
+@layer base {
+  :root {
+    --mint-snow: #DAF5F0;         /* Very light mint */
+    --green-mist: #B5D2AD;        /* Pale green */
+    --pastel-yellow: #FDFD96;     /* Soft, light yellow */
+    --light-apricot: #F8D6B3;     /* Pale peach tone */
+    --pink-lace: #FCDFFF;         /* Very light pinkish-purple */
+    --lavender-gray: #E3DFF2;     /* Muted lavender */
+    
+    --crystal: #A7DBD8;           /* Soft aqua */
+    --mint-green: #BAFCA2;        /* Vibrant minty green */
+    --mustard: #FFDB58;           /* Bright mustard yellow */
+    --light-salmon: #FFA07A;      /* Soft salmon */
+    --pink: #FFC0CB;              /* Standard pink */
+    --pale-mauve: #C4A1FF;        /* Light mauve/lavender */
+    
+    --sky-blue: #87CEEB;          /* Familiar sky blue */
+    --light-green: #90EE90;       /* Pale green (similar to 'LightGreen') */
+    --dandelion: #F4D738;         /* Bold yellow-orange */
+    --light-coral: #FF7A5C;       /* Lighter coral tone */
+    --pink-lavender: #FFB2EF;     /* Bright pastel pink */
+    --medium-purple: #A388EE;     /* Mid-range purple */
+    
+    --turquoise-blue: #69D2E7;    /* Clear turquoise */
+    --green-sheen: #7FBC8C;       /* Muted teal/green */
+    --goldenrod: #E3A018;         /* Rich golden yellow */
+    --bittersweet: #FF6B6B;       /* Vibrant reddish pink */
+    --hot-pink: #FF69B4;          /* Classic hot pink */
+    --purple-plum: #9723C9;       /* Deep purple */
+  }
+
+  .lexend-mega {
+    font-family: "Lexend Mega", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  
+  .public-sans {
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
 }
 
-.public-sans {
-  font-family: "Public Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-/* === Layout Components === */
-.section-container {
-  @apply px-6 md:px-16 py-16;
-}
-
-.section-header {
-  @apply text-3xl font-bold mb-8 lexend-mega;
-}
-
-.text-block {
-  @apply text-lg leading-relaxed public-sans;
-}
-
-/* === Neo-Brutalist Effects === */
-.neobrut-card {
-  @apply bg-[#FDFD96] border-2 border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)];
-}
-
-.neobrut-shadow {
-  @apply shadow-[4px_4px_0_0_rgba(0,0,0,1)];
-}
-
-.neobrut-line {
-  @apply bg-black w-1 absolute top-0 bottom-0;
-}
-
-.neobrut-dot {
-  @apply w-4 h-4 bg-black rounded-full absolute;
-}
-
-/* === Tilted Strips === */
-.tilt-strip {
-  @apply absolute w-[200vw] left-[-50vw] bg-black z-[999] pointer-events-none hidden md:block py-5;
-}
-
-.tilt-strip-top {
-  @apply tilt-strip top-[20rem] rotate-3;
-}
-
-.tilt-strip-bottom {
-  @apply tilt-strip top-[24rem] -rotate-3;
-}
-
-/* === Utilities === */
-.flex-center {
-  @apply flex justify-center items-center;
-}
-
-.project-card {
-  @apply neobrut-card p-4 mb-6;
+@layer components {
+  /* 
+    You can now use these variables wherever you like. 
+    Example usage:
+    
+    .btn-custom {
+      background-color: var(--hot-pink);
+      color: white;
+    }
+  */
 }
