@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="project-detail mt-2">
           <div class="flex flex-col md:flex-row gap-4">
             <img loading="lazy" src="${proj.image}" alt="Project Image" class="border-2 border-black shadow-[4px_4px_0_0_black] hidden md:block" style="width: 25rem; height: auto;">
-            <p class="text-sm leading-snug">${proj.description}</p>
+            <p class="text-xs md:text-sm leading-snug">${proj.description}</p>
           </div>
         </div>
       `;

@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="publication-abstract max-h-0 overflow-hidden mt-4 transition-all duration-500 ease-in-out">
           <div class="flex flex-row gap-4">
             <img src="${pub.image}" alt="Paper Image" class="border-2 border-black shadow-[4px_4px_0_0_black] hidden md:block" style="width: 25rem; height: auto;">
-            <p class="text-sm leading-snug">${pub.abstract}</p>
+            <p class="text-xs md:text-sm leading-snug">${pub.abstract}</p>
           </div>
         </div>
       `;

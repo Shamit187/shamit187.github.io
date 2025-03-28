@@ -87,7 +87,7 @@
 
 @layer components {
     .publication-section {
-        @apply w-screen bg-[var(--turquoise-blue)] flex flex-col px-20 py-10;
+        @apply w-screen bg-[var(--turquoise-blue)] flex flex-col px-4 md:px-20 py-10;
     }
 
     .publication-title {
@@ -100,7 +100,7 @@
     }
 
     .publication-card {
-        @apply p-4 border-2 border-black shadow-[4px_4px_0_0_black] bg-[var(--pastel-yellow)];
+        @apply p-4 border-2 border-black shadow-[4px_4px_0_0_black] bg-[var(--crystal)];
     }
 
     .publication-name {
@@ -125,7 +125,7 @@
     }
 
     .project-section {
-        @apply w-screen bg-[var(--crystal)] flex flex-col px-20 py-10;
+        @apply w-screen bg-[var(--medium-purple)] flex flex-col px-4 md:px-20 py-10;
     }
 
     .project-title {
@@ -138,7 +138,7 @@
     }
 
     .project-card {
-        @apply p-4 border-2 border-black shadow-[4px_4px_0_0_black] bg-[var(--mint-snow)] cursor-pointer;
+        @apply p-4 border-2 border-black shadow-[4px_4px_0_0_black] bg-[var(--pink-lavender)] cursor-pointer;
     }
 
     .project-name {
