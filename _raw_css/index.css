@@ -76,7 +76,7 @@
     }
 
     body {
-        @apply bg-[var(--pastel-yellow)] text-black font-sans leading-relaxed overflow-x-hidden;
+        @apply bg-[var(--pastel-yellow)] text-black font-sans leading-relaxed overflow-x-hidden text-xs md:text-base;
         font-family: "Public Sans", sans-serif;
     }
 
@@ -168,4 +168,5 @@
     .clickable-icon:hover {
         transform: scale(1.05) rotate(-4deg);
       }
+    
 }

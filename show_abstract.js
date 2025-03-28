@@ -1,40 +1,30 @@
 const publications = [
     {
         title: "COMPASS: A Chain-of-Thought Approach toward Geo-Spatial Reasoning for Popular Path Query using LLMs",
-        venue: "ECML PKDD 2025: Research Track",
+        venue: "ECML PKDD 2025: Research Track (On Review)",
         authors: [
-            { name: "Shamit Fatin", link: "https://shamit.dev" },
-            { name: "X", link: "#" },
-            { name: "Y", link: "#" }
+            { name: "Shamit Fatin", link: "#" },
+            { name: "Nazmul Islam Ananto", link: "https://niananto.com/home/" },
+            { name: "Md Rizwan Parvez", link: "https://scholar.google.com/citations?user=KhC8rtcAAAAJ&hl=en" },
+            { name: "Mohammed Eunus Ali", link: "https://scholar.google.com/citations?user=wf8iK0sAAAAJ&hl=en" },
         ],
-        link: "https://example.com/compass",
-        image: "paper/dummy.png",
-        abstract: "This paper presents COMPASS, a novel chain-of-thought method using LLMs to reason over geospatial data and generate optimal paths."
+        link: "paper/compass.pdf",
+        image: "paper/compass.png",
+        abstract: "Geo-spatial reasoning problems, such as identifying popular paths from historical trajectory data, are challenging due to the complexity and limitations of traditional algorithms and machine learning methods. These approaches often fail when synthesizing novel paths under user-defined constraints or sparse data. We introduce COMPASS, a novel framework that intelligently leverages the reasoning capabilities of Large Language Models (LLMs) for complex geo-spatial tasks. COMPASS  employs a two-stage approach: a \"Search\" stage that identifies popular paths, and a \"Generate\" stage that synthesizes new paths, both harnessing LLMs' ability to understand and reason about spatial relationships, constraints, and graph structures from historical data. Extensive experiments on real and synthetic datasets show that COMPASS not only performs well in standard comparisons, it excels where traditional methods fail, especially in generating novel paths and responding with user defined constraints. We will open-source the implementation of COMPASS."
     },
     {
         title: "LELANTE: LEveraging LLM for Automated ANdroid TEsting",
-        venue: "EASE 2025: Emerging Results",
+        venue: "EASE 2025: Emerging Results (On Review)",
         authors: [
-            { name: "Shamit Fatin", link: "https://shamit.dev" },
-            { name: "X", link: "#" },
-            { name: "Y", link: "#" }
+            { name: "Shamit Fatin", link: "#" },
+            { name: "Haz Sameen Shahgir", link: "https://patchwork53.github.io/" },
+            { name: "Sukarna Barua", link: "https://scholar.google.com/citations?user=hLEPDEIAAAAJ&hl=en" },
+            { name: "Anindya Iqbal", link: "https://scholar.google.com/citations?user=jAuiNFgAAAAJ&hl=en" },
         ],
-        link: "https://example.com/lelante",
-        image: "paper/dummy.png",
-        abstract: "LELANTE explores the use of large language models for generating automated tests in Android apps with minimal manual intervention."
+        link: "paper/lelante.pdf",
+        image: "paper/lelante.png",
+        abstract: "Given natural language test case description for an Android application, existing testing approaches require developers to manually write scripts using tools such as Appium and Espresso to execute the corresponding test case. This process is labor-intensive and demands significant effort to maintain as UI interfaces evolve throughout development. In this work, we introduce LELANTE, a novel framework that utilizes large language models (LLMs) to automate test case execution without requiring pre-written scripts. LELANTE  interprets natural language test case descriptions, iteratively generate action plans, and perform the actions directly on the Android screen using its GUI. LELANTE employs a screen refinement process to enhance LLM interpretability, constructs a structured prompt for LLMs, and implements an action generation mechanism based on chain-of-thought reasoning of LLMs. To further reduce computational cost and enhance scalability, LELANTE utilizes model distillation using a foundational LLM. In experiments across 390 test cases spanning 10 popular Android applications, LELANTE achieved a 73% test execution success rate.  Our results demonstrate that LLMs can effectively bridge the gap between natural language test case description and automated execution, making mobile testing more scalable and adaptable."
     },
-    {
-        title: "Dummy Publication",
-        venue: "NATURE",
-        authors: [
-            { name: "Shamit Fatin", link: "https://shamit.dev" },
-            { name: "X", link: "#" },
-            { name: "Y", link: "#" }
-        ],
-        link: "https://example.com/dummy",
-        image: "paper/dummy.png",
-        abstract: "This is a dummy abstract used to demonstrate rendering publication data dynamically in a neo-brutalist styled portfolio."
-    }
 ];
 
 
@@ -63,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
         <div class="publication-abstract max-h-0 overflow-hidden mt-4 transition-all duration-500 ease-in-out">
           <div class="flex flex-row gap-4">
-            <img src="${pub.image}" alt="Paper Image" class="w-32 h-auto border-2 border-black shadow-[4px_4px_0_0_black]">
+            <img src="${pub.image}" alt="Paper Image" class="border-2 border-black shadow-[4px_4px_0_0_black]" style="width: 25rem; height: auto;">
             <p class="text-sm leading-snug">${pub.abstract}</p>
           </div>
         </div>
