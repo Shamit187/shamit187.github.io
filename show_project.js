@@ -72,8 +72,8 @@ document.addEventListener("DOMContentLoaded", () => {
       .join(", ");
 
     const collaborationHTML = proj.collaboration
-      .map(c => `<div class="text-bold">${c}</div>`)
-      .join(" ");
+      .map(c => `${c}`)
+      .join(", ");
 
     card.innerHTML = `
         <div class="flex flex-row justify-between items-center">
@@ -83,14 +83,14 @@ document.addEventListener("DOMContentLoaded", () => {
           </a>
         </div>
         <div class="flex flex-row gap-4">
-          ${collaborationHTML}
+          <p class="project-collaboration">${collaborationHTML}</p>
           <p class="project-tech">${proj.tags}</p>
           <p class="project-contributors">${contributorsHTML}</p>
           
         </div>
         <div class="project-detail mt-2">
           <div class="flex flex-col md:flex-row gap-4">
-            <img loading="lazy" src="${proj.image}" alt="Project Image" class="border-2 border-black shadow-[4px_4px_0_0_black]" style="width: 25rem; height: auto;">
+            <img loading="lazy" src="${proj.image}" alt="Project Image" class="border-2 border-black shadow-[4px_4px_0_0_black] hidden md:block" style="width: 25rem; height: auto;">
             <p class="text-sm leading-snug">${proj.description}</p>
           </div>
         </div>
