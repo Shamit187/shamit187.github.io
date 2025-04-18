@@ -14,7 +14,7 @@ const publications = [
     },
     {
         title: "LELANTE: LEveraging LLM for Automated ANdroid TEsting",
-        venue: "EASE 2025: Emerging Results (On Review)",
+        venue: "EASE 2025: Emerging Results",
         authors: [
             { name: "Shamit Fatin", link: "#" },
             { name: "Haz Sameen Shahgir", link: "https://patchwork53.github.io/" },
