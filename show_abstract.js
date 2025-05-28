@@ -1,17 +1,17 @@
 const publications = [
-    {
-        title: "COMPASS: A Chain-of-Thought Approach toward Geo-Spatial Reasoning for Popular Path Query using LLMs",
-        venue: "ECML PKDD 2025: Research Track (On Review)",
-        authors: [
-            { name: "Shamit Fatin", link: "#" },
-            { name: "Nazmul Islam Ananto", link: "https://niananto.com/home/" },
-            { name: "Md Rizwan Parvez", link: "https://scholar.google.com/citations?user=KhC8rtcAAAAJ&hl=en" },
-            { name: "Mohammed Eunus Ali", link: "https://scholar.google.com/citations?user=wf8iK0sAAAAJ&hl=en" },
-        ],
-        link: "paper/compass.pdf",
-        image: "paper/compass.png",
-        abstract: "Geo-spatial reasoning problems, such as identifying popular paths from historical trajectory data, are challenging due to the complexity and limitations of traditional algorithms and machine learning methods. These approaches often fail when synthesizing novel paths under user-defined constraints or sparse data. We introduce COMPASS, a novel framework that intelligently leverages the reasoning capabilities of Large Language Models (LLMs) for complex geo-spatial tasks. COMPASS  employs a two-stage approach: a \"Search\" stage that identifies popular paths, and a \"Generate\" stage that synthesizes new paths, both harnessing LLMs' ability to understand and reason about spatial relationships, constraints, and graph structures from historical data. Extensive experiments on real and synthetic datasets show that COMPASS not only performs well in standard comparisons, it excels where traditional methods fail, especially in generating novel paths and responding with user defined constraints. We will open-source the implementation of COMPASS."
-    },
+    // {
+    //     title: "COMPASS: A Chain-of-Thought Approach toward Geo-Spatial Reasoning for Popular Path Query using LLMs",
+    //     venue: "ECML PKDD 2025: Research Track (On Review)",
+    //     authors: [
+    //         { name: "Shamit Fatin", link: "#" },
+    //         { name: "Nazmul Islam Ananto", link: "https://niananto.com/home/" },
+    //         { name: "Md Rizwan Parvez", link: "https://scholar.google.com/citations?user=KhC8rtcAAAAJ&hl=en" },
+    //         { name: "Mohammed Eunus Ali", link: "https://scholar.google.com/citations?user=wf8iK0sAAAAJ&hl=en" },
+    //     ],
+    //     link: "paper/compass.pdf",
+    //     image: "paper/compass.png",
+    //     abstract: "Geo-spatial reasoning problems, such as identifying popular paths from historical trajectory data, are challenging due to the complexity and limitations of traditional algorithms and machine learning methods. These approaches often fail when synthesizing novel paths under user-defined constraints or sparse data. We introduce COMPASS, a novel framework that intelligently leverages the reasoning capabilities of Large Language Models (LLMs) for complex geo-spatial tasks. COMPASS  employs a two-stage approach: a \"Search\" stage that identifies popular paths, and a \"Generate\" stage that synthesizes new paths, both harnessing LLMs' ability to understand and reason about spatial relationships, constraints, and graph structures from historical data. Extensive experiments on real and synthetic datasets show that COMPASS not only performs well in standard comparisons, it excels where traditional methods fail, especially in generating novel paths and responding with user defined constraints. We will open-source the implementation of COMPASS."
+    // },
     {
         title: "LELANTE: LEveraging LLM for Automated ANdroid TEsting",
         venue: "EASE 2025: Emerging Results",
