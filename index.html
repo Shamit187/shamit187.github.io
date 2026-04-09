@@ -1,160 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shamit Fatin</title>
-    <link href="index.css" rel="stylesheet" />
-
-    <!-- Fonts -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shamit Fatin - Research Profile</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=share" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-    <!-- Tilted Black Strips -->
-    <div class=""></div>
-    <div class=""></div>
-
-    <!-- Top Section: About Me + Image -->
-    <section class="flex flex-col-reverse md:flex-row w-screen h-full items-center justify-between pt-10 px-20"
-        id="about">
-        <!-- Image -->
-        <div class="relative w-96 h-auto">
-            <!-- Main Image -->
-            <img src="photos/me.png" alt="Your Photo" class="w-96">
-
-            <!-- Brutalist squares with randomized static layout -->
-            <!-- Twitter -->
-            <a href="https://x.com/CuriousShamit" target="_blank"
-                class="absolute bottom-6 left-2 w-12 h-12 bg-[var(--green-sheen)]  clickable-icon">
-                <img src="icons/twitter.png" alt="Twitter" class="w-6 h-6" />
-            </a>
-
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/shamit-fatin-38a240142/" target="_blank"
-                class="absolute bottom-2 left-16 w-10 h-10 bg-[var(--bittersweet)]  clickable-icon">
-                <img src="icons/linkedin.png" alt="LinkedIn" class="w-6 h-6" />
-            </a>
-
-            <!-- CV -->
-            <a href="ShamitCV.pdf" target="_blank"
-                class="absolute bottom-8 left-28 w-8 h-8 bg-[var(--goldenrod)]  clickable-icon">
-                <img src="icons/cv.png" alt="CV" class="w-5 h-5" />
-            </a>
-
-            <!-- Email -->
-            <a href="mailto:shamit187@email.com"
-                class="absolute bottom-4 left-42 w-14 h-14 bg-[var(--hot-pink)]  clickable-icon">
-                <img src="icons/email.png" alt="Email" class="w-7 h-7" />
-            </a>
-
-            <!-- GitHub -->
-            <a href="https://www.instagram.com/damnit.shamit/" target="_blank"
-                class="absolute bottom-0 left-58 w-10 h-10 bg-[var(--pale-mauve)]  clickable-icon">
-                <img src="icons/instagram.png" alt="Instagram" class="w-6 h-6" />
-            </a>
-
-            <!-- Instagram -->
-            <a href="https://github.com/Shamit187" target="_blank"
-                class="absolute bottom-7 left-72 w-16 h-16 bg-[var(--crystal)]  clickable-icon">
-                <img src="icons/github.png" alt="GitHub" class="w-8 h-8" />
-            </a>
-
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-bg-red"></div>
+        <div class="hero-bg-black"></div>
+        
+        <div class="container hero-content">
+            <div class="hero-grid">
+                <!-- Text content -->
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span>PhD Researcher</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        SHAMIT
+                        <span class="hero-title-accent">FATIN</span>
+                    </h1>
+                    
+                    <div class="hero-subtitle">
+                        <p>Databases × Machine Learning</p>
+                    </div>
+                    
+                    <div class="hero-divider">
+                        <div class="divider-line"></div>
+                        <div class="divider-line-short"></div>
+                        <div class="divider-line-shorter"></div>
+                    </div>
+                </div>
+                
+                <!-- Photo -->
+                <div class="hero-photo-wrapper">
+                    <div class="photo-border-bg"></div>
+                    <div class="photo-container">
+                        <img src="photos/me.png"
+                             alt="Shamit Fatin"
+                             class="hero-photo">
+                    </div>
+                    <div class="photo-label">
+                        <span>PROFILE_2026</span>
+                    </div>
+                </div>
+            </div>
         </div>
-
-
-        <!-- About Me Text -->
-        <div class="text-center md:text-right lexend-mega space-y-4">
-            <p>
-                Hi there! I'm
-                <span
-                    class="font-bold text-[var(--purple-plum)] tracking-[-0.15rem] inline-block transform scale-150 -translate-x-10 pl-13">
-                    Shamit Fatin
-                </span>
-            </p>
-            <p>
-                I'm a
-                <span class="text-[var(--bittersweet)] pl-2 mr-2 border-2 border-black shadow-[4px_4px_0_0_black]">
-                    first-year PhD student
-                </span>
-                at the
-                <span class="font-bold tracking-[-0.15rem]">
-                    University of Utah
-                </span>, working under
-                <span class="font-bold text-[var(--hot-pink)] bg-black pl-1 m-2 inline-block transform -rotate-3">
-                    Professor Anna Fariha
-                </span>. My research dives into the realm of
-                <span class="font-bold text-[var(--purple-plum)]">
-                    databases
-                </span> and
-                <span class="font-bold text-[var(--hot-pink)]">
-                    machine learning
-                </span>.
-            </p>
-            <p>
-                I completed my undergrad in Computer Science and Engineering at
-                <span
-                    class="font-bold text-[var(--bittersweet)] pl-1 mr-2 border-2 border-black shadow-[4px_4px_0_0_black]">
-                    BUET
-                </span>, where I also worked as a research assistant
-            </p>
-            <p>
-                Outside the academic grind, I'm into
-                <a href="https://www.facebook.com/shamit.187/videos/408043414627494">
-                    <span
-                        class="font-bold text-[var(--hot-pink)] tracking-[-0.15rem] inline-block transform translate-y-1 mr-2">
-                        music
-                    </span>
-                </a>,
-                <a href="https://myanimelist.net/animelist/ShamitFatin">
-                    <span
-                        class="font-bold text-[var(--purple-plum)] tracking-[-0.15rem] inline-block transform scale-110 mr-2">
-                        anime
-                    </span>
-                </a>,
-                <a href="https://steamcommunity.com/id/fuchkaIsGamin/">
-                    <span
-                        class="font-bold text-[var(--light-coral)] tracking-[-0.15rem] inline-block transform rotate-5 mr-1">
-                        games
-                    </span>
-                </a>, and
-                <span class="font-bold text-[var(--goldenrod)] tracking-[-0.15rem] inline-block bg-black pl-1 pr-2 ">
-                    art
-                </span>
-            </p>
-        </div>
-
-
-
-    </section>
-
-    <section class="publication-section" id="publications">
-        <h2 class="publication-title">Publications</h2>
-        <div class="publication-list">
-
+        
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <div class="scroll-dot"></div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="project-section" id="projects">
-        <h2 class="project-title">Projects</h2>
-        <div class="project-list">
-            <!-- JS will inject project cards here -->
+    <!-- Bio Section -->
+    <section class="bio-section">
+        <div class="bio-accent-circle"></div>
+        <div class="bio-accent-bar"></div>
+        
+        <div class="container">
+            <div class="section-header">
+                <div class="section-number">
+                    <span>01</span>
+                </div>
+                <h2 class="section-title">About</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="bio-grid">
+                <div class="bio-content">
+                    <p class="bio-text-large">
+                        Hi there! I'm Shamit Fatin, a first-year PhD student at the University of Utah, 
+                        working under Professor Anna Fariha. My research dives into the realm of databases 
+                        and machine learning.
+                    </p>
+                    
+                    <p class="bio-text">
+                        I completed my undergrad in Computer Science and Engineering at BUET, where I also 
+                        worked as a research assistant.
+                    </p>
+                    
+                    <p class="bio-text">
+                        Outside the academic grind, I'm into music, anime, games, and art.
+                    </p>
+                    
+                    <div class="bio-tags">
+                        <span class="tag tag-black">Databases</span>
+                        <span class="tag tag-red">Machine Learning</span>
+                        <span class="tag tag-outline">Software Engineering</span>
+                    </div>
+                </div>
+                
+                <!-- Stats sidebar -->
+                <div class="bio-stats">
+                    <div class="stat-card stat-card-black">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Publications</div>
+                    </div>
+                    
+                    <div class="stat-card stat-card-border">
+                        <div class="stat-number">1st</div>
+                        <div class="stat-label">Year PhD Student</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Link Script -->
-    <script src="show_abstract.js"></script>
-    <script src="show_project.js"></script>
+    <!-- Publications Section -->
+    <section class="publications-section">
+        <div class="publications-bg-accent"></div>
+        <div class="publications-bg-glow"></div>
+        
+        <div class="container">
+            <div class="publications-header">
+                <h2 class="publications-title">Publications</h2>
+                <div class="publications-number">
+                    <span>02</span>
+                </div>
+            </div>
+            
+            <div id="publications-list" class="publications-list">
+                <!-- Publications will be loaded here via JavaScript -->
+            </div>
+            
+            <div class="publications-footer">
+                <div class="footer-line"></div>
+                <button class="view-all-btn">
+                    <span>View All Publications</span>
+                </button>
+                <div class="footer-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section">
+        <div class="timeline-bg-accent"></div>
+        
+        <div class="container">
+            <div class="timeline-header">
+                <div class="timeline-number">
+                    <span>03</span>
+                </div>
+                <h2 class="timeline-title">Life Stages</h2>
+            </div>
+            
+            <div class="timeline-wrapper">
+                <div class="timeline-line"></div>
+                <div id="timeline-list" class="timeline-list">
+                    <!-- Timeline events will be loaded here via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-copyright">
+                    © 2026 Shamit Fatin. All rights reserved.
+                </div>
+                
+                <div id="footer-links" class="footer-links"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
