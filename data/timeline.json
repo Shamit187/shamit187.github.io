@@ -4,7 +4,7 @@
     "type": "education",
     "title": "PhD in Computer Science",
     "organization": "University of Utah · Kahlert School of Computing",
-    "description": "Advisor: Anna Fariha · Research focus on databases and machine learning"
+    "description": "Advisor: Anna Fariha · Research focus on databases"
   },
   {
     "period": "2024 - 2025",
@@ -18,13 +18,13 @@
     "type": "education",
     "title": "B.S. in Computer Science and Engineering",
     "organization": "Bangladesh University of Engineering and Technology (BUET)",
-    "description": "Worked as a research assistant focusing on machine learning and software engineering"
+    "description": ""
   },
   {
     "period": "2017 - 2018",
     "type": "education",
     "title": "High School",
     "organization": "SOS Hermann Gmeiner College",
-    "description": "Completed higher secondary education"
+    "description": ""
   }
 ]

@@ -6,6 +6,7 @@ interface Publication {
   name: string;
   abstract: string;
   year: number;
+  authors?: string[];
   coAuthors: string[];
   venue: string;
   type: 'journal' | 'conference' | 'workshop';
@@ -22,7 +23,7 @@ export function PublicationsSection() {
   };
 
   return (
-    <div className="relative bg-black py-24 overflow-hidden">
+    <div className="relative bg-black py-24 overflow-hidden" data-animate="fade-up">
       {/* Subtle accent background */}
       <div className="absolute top-0 left-0 w-[40%] h-full bg-[#E60012]/5 skew-x-12 transform -translate-x-1/3" />
       <div className="absolute bottom-0 right-0 w-64 h-64 bg-[#E60012]/10 rounded-full blur-3xl" />
@@ -46,6 +47,7 @@ export function PublicationsSection() {
             <div
               key={index}
               className="group relative bg-white/5 hover:bg-white/10 transition-all duration-300 border-l-4 border-[#E60012]"
+              data-animate="fade-up"
             >
               <div className="p-8 flex flex-col md:flex-row gap-6">
                 {/* Year badge */}
@@ -64,14 +66,20 @@ export function PublicationsSection() {
                     </h3>
                   </div>
                   
-                  {pub.coAuthors.length > 0 && (
-                    <p className="text-white/60 text-sm">
-                      Shamit Fatin, {pub.coAuthors.join(', ')}
-                    </p>
-                  )}
-                  {pub.coAuthors.length === 0 && (
-                    <p className="text-white/60 text-sm">Shamit Fatin</p>
-                  )}
+                  <p className="text-white/60 text-sm">
+                    {(pub.authors && pub.authors.length > 0
+                      ? pub.authors
+                      : ['Shamit Fatin', ...pub.coAuthors]
+                    ).map((author, authorIndex, authorList) => (
+                      <span
+                        key={`${author}-${authorIndex}`}
+                        className={author === 'Shamit Fatin' ? 'font-black text-white' : undefined}
+                      >
+                        {author}
+                        {authorIndex < authorList.length - 1 ? ', ' : ''}
+                      </span>
+                    ))}
+                  </p>
                   
                   <div className="flex flex-wrap items-center gap-4">
                     <span className="text-white/80">{pub.venue}</span>
@@ -133,14 +141,6 @@ export function PublicationsSection() {
           ))}
         </div>
         
-        {/* View more indicator */}
-        <div className="mt-12 flex items-center gap-4">
-          <div className="flex-1 h-px bg-white/20" />
-          <button className="px-8 py-4 bg-[#E60012] text-white font-black uppercase tracking-wider hover:bg-white hover:text-black transition-all -skew-x-6">
-            <span className="skew-x-6 inline-block">View All Publications</span>
-          </button>
-          <div className="flex-1 h-px bg-white/20" />
-        </div>
       </div>
     </div>
   );

@@ -1,3 +1,39 @@
+let scrollObserver;
+
+function setupScrollAnimations() {
+    const elements = document.querySelectorAll('[data-animate], .reveal');
+    if (elements.length === 0) {
+        return;
+    }
+
+    if (!('IntersectionObserver' in window)) {
+        elements.forEach((el) => el.classList.add('is-visible'));
+        return;
+    }
+
+    if (!scrollObserver) {
+        scrollObserver = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        scrollObserver.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.2, rootMargin: '0px 0px -10% 0px' }
+        );
+    }
+
+    elements.forEach((el) => {
+        if (el.dataset.observed === 'true') {
+            return;
+        }
+        el.dataset.observed = 'true';
+        scrollObserver.observe(el);
+    });
+}
+
 // Load and render publications
 async function loadPublications() {
     try {
@@ -9,10 +45,17 @@ async function loadPublications() {
             const item = document.createElement('div');
             item.className = 'publication-item';
             item.id = `pub-${index}`;
+            item.setAttribute('data-animate', 'fade-up');
             
-            const authors = pub.coAuthors.length > 0 
-                ? `Shamit Fatin, ${pub.coAuthors.join(', ')}`
-                : 'Shamit Fatin';
+            const orderedAuthors = Array.isArray(pub.authors) && pub.authors.length > 0
+                ? pub.authors
+                : ['Shamit Fatin', ...(pub.coAuthors ?? [])];
+            const authorsHtml = orderedAuthors
+                .map((name) => name === 'Shamit Fatin'
+                    ? '<span class="author-highlight">Shamit Fatin</span>'
+                    : name
+                )
+                .join(', ');
             
             item.innerHTML = `
                 <div class="publication-content">
@@ -30,7 +73,7 @@ async function loadPublications() {
                             <h3 class="publication-title">${pub.name}</h3>
                         </div>
                         
-                        <p class="publication-authors">${authors}</p>
+                        <p class="publication-authors">${authorsHtml}</p>
                         
                         <div class="publication-meta">
                             <span class="publication-venue">${pub.venue}</span>
@@ -69,6 +112,8 @@ async function loadPublications() {
             
             container.appendChild(item);
         });
+
+        setupScrollAnimations();
     } catch (error) {
         console.error('Error loading publications:', error);
     }
@@ -140,6 +185,7 @@ async function loadTimeline() {
             
             const item = document.createElement('div');
             item.className = `timeline-item ${isLeft ? 'left' : ''}`;
+            item.setAttribute('data-animate', isLeft ? 'fade-right' : 'fade-left');
             
             item.innerHTML = `
                 <div class="timeline-content-wrapper">
@@ -176,6 +222,8 @@ async function loadTimeline() {
             
             container.appendChild(item);
         });
+
+        setupScrollAnimations();
     } catch (error) {
         console.error('Error loading timeline:', error);
     }
@@ -186,4 +234,5 @@ document.addEventListener('DOMContentLoaded', () => {
     loadPublications();
     loadTimeline();
     loadPersonalLinks();
+    setupScrollAnimations();
 });

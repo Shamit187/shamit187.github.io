@@ -14,7 +14,7 @@ export function HeroSection() {
       <div className="relative z-20 container mx-auto px-6 py-20 flex items-center min-h-screen">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
           {/* Text content */}
-          <div className="space-y-6">
+          <div className="space-y-6" data-animate="fade-up">
             <div className="inline-block px-6 py-2 bg-[#E60012] -skew-x-6 transform">
               <span className="text-white text-sm tracking-wider skew-x-6 inline-block uppercase">PhD Researcher</span>
             </div>
@@ -39,7 +39,7 @@ export function HeroSection() {
           </div>
           
           {/* Photo */}
-          <div className="relative lg:justify-self-end">
+          <div className="relative lg:justify-self-end" data-animate="fade-left">
             <div className="absolute -top-4 -left-4 w-full h-full border-4 border-[#E60012] -skew-y-3 z-0" />
             <div className="relative z-10 w-80 h-96 overflow-hidden -skew-y-3 border-4 border-white">
               <ImageWithFallback

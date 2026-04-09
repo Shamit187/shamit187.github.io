@@ -3,7 +3,7 @@
     "name": "SAGE: Adaptive Recommendation of Spreadsheet Pivot Tables",
     "abstract": "We present SAGE, an adaptive system that recommends pivot tables for spreadsheet users. Our demo showcases how SAGE intelligently suggests pivot table configurations based on user data and interaction patterns, significantly improving productivity in data exploration and analysis tasks.",
     "year": 2026,
-    "coAuthors": ["Whanhee Cho", "Anna Fariha"],
+    "authors": ["Whanhee Cho", "Shamit Fatin", "Anna Fariha"],
     "venue": "SIGMOD 2026 [Demo]",
     "type": "conference",
     "link": ""
@@ -12,7 +12,7 @@
     "name": "CompassLLM: A Multi-Agent Approach toward Geo-Spatial Reasoning for Popular Path Query",
     "abstract": "This paper introduces CompassLLM, a novel multi-agent framework that leverages large language models for geo-spatial reasoning. We demonstrate how our approach effectively handles popular path queries by coordinating multiple specialized agents, achieving state-of-the-art performance on various geo-spatial benchmarks.",
     "year": 2025,
-    "coAuthors": ["Md. Nazmul Islam Ananto", "Mohammed Eunus Ali", "Md. Rizwan Parvez"],
+    "authors": ["Md. Nazmul Islam Ananto","Shamit Fatin", "Mohammed Eunus Ali", "Md. Rizwan Parvez"],
     "venue": "ACL ARR 2025 Findings",
     "type": "conference",
     "link": ""
@@ -21,7 +21,7 @@
     "name": "LELANTE: LEveraging LLM for Automated ANdroid TEsting",
     "abstract": "LELANTE presents a comprehensive framework for automated Android application testing using large language models. Our approach significantly reduces manual testing effort while improving test coverage and bug detection rates, demonstrating the practical application of LLMs in software engineering workflows.",
     "year": 2025,
-    "coAuthors": ["Haz Sameen Shahgir", "Mehbubul Hasan Al-Quvi", "Sukarna Barua", "Anindya Iqbal", "Sadia Sharmin", "Md. Mostofa Akbar", "Kallol Kumar Pal", "A. Asif Al Rashid"],
+    "authors": ["Haz Sameen Shahgir", "Shamit Fatin", "Mehbubul Hasan Al-Quvi", "Sukarna Barua", "Anindya Iqbal", "Sadia Sharmin", "Md. Mostofa Akbar", "Kallol Kumar Pal", "A. Asif Al Rashid"],
     "venue": "EASE 2025",
     "type": "conference",
     "link": "https://dl.acm.org/doi/10.1145/3756681.3757032"

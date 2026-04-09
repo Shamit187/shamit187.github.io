@@ -1,8 +1,10 @@
+import { useEffect } from 'react';
 import { HeroSection } from './components/HeroSection';
 import { BioSection } from './components/BioSection';
 import { PublicationsSection } from './components/PublicationsSection';
 import { TimelineSection } from './components/TimelineSection';
 import personalLinksData from '../data/personalLinks.json';
+import { initScrollAnimations } from './scrollAnimations';
 
 interface PersonalLink {
   label: string;
@@ -12,6 +14,10 @@ interface PersonalLink {
 const personalLinks: PersonalLink[] = personalLinksData;
 
 export default function App() {
+  useEffect(() => {
+    return initScrollAnimations();
+  }, []);
+
   return (
     <div className="min-h-screen">
       <HeroSection />
@@ -20,7 +26,7 @@ export default function App() {
       <TimelineSection />
       
       {/* Footer */}
-      <footer className="bg-black py-12 border-t-4 border-[#E60012]">
+      <footer className="bg-black py-12 border-t-4 border-[#E60012]" data-animate="fade-up">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="text-white/60 text-sm">

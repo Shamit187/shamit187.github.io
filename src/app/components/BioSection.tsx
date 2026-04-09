@@ -1,6 +1,6 @@
 export function BioSection() {
   return (
-    <div className="relative bg-white py-24 overflow-hidden">
+    <div className="relative bg-white py-24 overflow-hidden" data-animate="fade-up">
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-[#E60012]/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-96 h-2 bg-[#E60012]" />
