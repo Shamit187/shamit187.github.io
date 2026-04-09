@@ -25,7 +25,7 @@ const colorMap = {
 
 export function TimelineSection() {
   return (
-    <div className="relative bg-white py-12 md:py-16 overflow-hidden" data-animate="fade-up">
+    <div className="relative bg-white py-12 md:py-16 overflow-hidden punk-section--light" data-animate="fade-up">
       {/* Diagonal background accent */}
       <div className="absolute top-1/4 right-0 w-[50%] h-96 bg-black -skew-y-6 transform translate-x-1/4" />
       
@@ -67,7 +67,7 @@ export function TimelineSection() {
                         </span>
                       </div>
                       
-                      <div className={`bg-white border-4 ${isCurrent ? 'border-[#E60012] shadow-2xl' : 'border-black'} p-4 md:p-5 w-full md:max-w-md ${isLeft ? 'md:ml-auto' : ''}`}>
+                      <div className={`bg-white border-4 ${isCurrent ? 'border-[#E60012] shadow-2xl' : 'border-black'} p-4 md:p-5 w-full md:max-w-md ${isLeft ? 'md:ml-auto' : ''} punk-card`}>
                         <div className="flex items-start gap-3 mb-2">
                           <Icon className="w-5 h-5 md:w-6 md:h-6 text-[#E60012] flex-shrink-0" />
                           <h3 className="font-black text-base md:text-lg text-black">{event.title}</h3>

@@ -3,7 +3,7 @@ import heroPhoto from '../../../photos/me.png';
 
 export function HeroSection() {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-black">
+    <div className="relative min-h-screen overflow-hidden bg-black hero-punk">
       {/* Red diagonal accent */}
       <div className="absolute top-0 right-0 w-[60%] h-full bg-[#E60012] -skew-x-12 transform translate-x-1/4 z-0" />
       
@@ -15,13 +15,13 @@ export function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full lg:[&>div:first-child]:order-2 lg:[&>div:last-child]:order-1">
           {/* Text content */}
           <div className="space-y-6" data-animate="fade-up">
-            <div className="inline-block px-6 py-2 bg-[#E60012] -skew-x-6 transform">
+            <div className="inline-block px-6 py-2 bg-[#E60012] -skew-x-6 transform punk-badge">
               <span className="text-white text-sm tracking-wider skew-x-6 inline-block uppercase">PhD Researcher</span>
             </div>
             
-            <h1 className="text-6xl md:text-8xl font-black text-white leading-none">
-              SHAMIT
-              <span className="block text-[#E60012] -ml-2">FATIN</span>
+            <h1 className="text-6xl md:text-8xl font-black text-white leading-none punk-title">
+              <span className="punk-name-glow">SHAMIT</span>
+              <span className="block text-[#E60012] -ml-2 punk-accent punk-name-glow">FATIN</span>
             </h1>
             
             <div className="border-l-4 border-[#E60012] pl-6 py-4">
@@ -39,7 +39,7 @@ export function HeroSection() {
           </div>
           
           {/* Photo */}
-          <div className="relative lg:justify-self-start" data-animate="fade-right">
+          <div className="relative lg:justify-self-start punk-photo" data-animate="fade-right">
             <div className="absolute -top-4 -left-4 w-full h-full border-4 border-[#E60012] -skew-y-3 z-0" />
             <div className="relative z-10 w-80 h-96 overflow-hidden -skew-y-3 border-4 border-white">
               <ImageWithFallback
@@ -50,7 +50,7 @@ export function HeroSection() {
             </div>
             
             {/* Photo label */}
-            <div className="absolute -bottom-6 -right-6 bg-white px-6 py-3 -skew-x-6 z-20">
+            <div className="absolute -bottom-6 -right-6 bg-white px-6 py-3 -skew-x-6 z-20 punk-label">
               <span className="text-black font-black skew-x-6 inline-block text-sm">PROFILE_2026</span>
             </div>
           </div>

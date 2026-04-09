@@ -1,6 +1,6 @@
 export function BioSection() {
   return (
-    <div className="relative bg-white py-24 overflow-hidden" data-animate="fade-up">
+    <div className="relative bg-white py-24 overflow-hidden punk-section--light" data-animate="fade-up">
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-[#E60012]/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-96 h-2 bg-[#E60012]" />
@@ -43,14 +43,14 @@ export function BioSection() {
             
             {/* Stats sidebar */}
             <div className="md:col-span-4 space-y-6">
-              <div className="bg-black p-6 -skew-y-2">
+              <div className="bg-black p-6 -skew-y-2 punk-card">
                 <div className="skew-y-2">
                   <div className="text-5xl font-black text-[#E60012]">3</div>
                   <div className="text-white/70 text-sm uppercase tracking-wider mt-2">Publications</div>
                 </div>
               </div>
               
-              <div className="border-4 border-[#E60012] p-6 skew-y-2">
+              <div className="border-4 border-[#E60012] p-6 skew-y-2 punk-card">
                 <div className="-skew-y-2">
                   <div className="text-5xl font-black text-black">1st</div>
                   <div className="text-black/70 text-sm uppercase tracking-wider mt-2">Year PhD Student</div>

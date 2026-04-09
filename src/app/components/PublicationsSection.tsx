@@ -23,7 +23,7 @@ export function PublicationsSection() {
   };
 
   return (
-    <div className="relative bg-black py-24 overflow-hidden" data-animate="fade-up">
+    <div className="relative bg-black py-24 overflow-hidden punk-section--dark" data-animate="fade-up">
       {/* Subtle accent background */}
       <div className="absolute top-0 left-0 w-[40%] h-full bg-[#E60012]/5 skew-x-12 transform -translate-x-1/3" />
       <div className="absolute bottom-0 right-0 w-64 h-64 bg-[#E60012]/10 rounded-full blur-3xl" />
@@ -46,7 +46,7 @@ export function PublicationsSection() {
           {publications.map((pub, index) => (
             <div
               key={index}
-              className="group relative bg-white/5 hover:bg-white/10 transition-all duration-300 border-l-4 border-[#E60012]"
+              className="group relative bg-white/5 hover:bg-white/10 transition-all duration-300 border-l-4 border-[#E60012] punk-card"
               data-animate="fade-up"
             >
               <div className="p-8 flex flex-col md:flex-row gap-6">

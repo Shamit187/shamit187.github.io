@@ -19,6 +19,168 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --punk-cyan: #00f0ff;
+  --punk-pink: #ff2d8f;
+  --punk-lime: #c8ff28;
+  --punk-black: #050505;
+}
+
+body {
+  background: var(--punk-black);
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(60rem 60rem at 10% -10%, rgba(0, 240, 255, 0.18), transparent 60%),
+    radial-gradient(50rem 50rem at 110% 10%, rgba(255, 45, 143, 0.16), transparent 55%),
+    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0 2px, transparent 2px 7px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(120deg, rgba(0, 0, 0, 0.6), transparent 40%),
+    repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0 1px, transparent 1px 6px);
+  mix-blend-mode: multiply;
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.punk-theme {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-punk {
+  background: #000;
+}
+
+.hero-punk::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(30rem 30rem at 20% 20%, rgba(0, 240, 255, 0.18), transparent 60%),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0 2px, transparent 2px 10px);
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-punk > * {
+  position: relative;
+  z-index: 1;
+}
+
+.punk-badge {
+  background: linear-gradient(135deg, #e60012, var(--punk-pink));
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.punk-title {
+  text-shadow: 4px 4px 0 rgba(0, 240, 255, 0.25);
+}
+
+.punk-title .punk-accent {
+  text-shadow: 4px 4px 0 rgba(255, 45, 143, 0.35);
+}
+
+.punk-name-glow {
+  display: inline-block;
+  animation: punkGlow 3.2s ease-in-out infinite;
+  text-shadow:
+    0 0 6px rgba(0, 240, 255, 0.5),
+    0 0 18px rgba(0, 240, 255, 0.35),
+    0 0 28px rgba(255, 45, 143, 0.25);
+}
+
+.punk-label {
+  background: linear-gradient(135deg, #ffffff, var(--punk-lime));
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.punk-photo {
+  filter: drop-shadow(12px 12px 0 rgba(0, 0, 0, 0.7));
+}
+
+@keyframes punkGlow {
+  0%, 100% {
+    text-shadow:
+      0 0 4px rgba(0, 240, 255, 0.35),
+      0 0 12px rgba(0, 240, 255, 0.25),
+      0 0 18px rgba(255, 45, 143, 0.2);
+  }
+  50% {
+    text-shadow:
+      0 0 10px rgba(0, 240, 255, 0.8),
+      0 0 28px rgba(0, 240, 255, 0.55),
+      0 0 42px rgba(255, 45, 143, 0.45);
+  }
+}
+
+.punk-section--dark {
+  position: relative;
+  z-index: 1;
+}
+
+.punk-section--dark::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(255, 45, 143, 0.12), rgba(0, 240, 255, 0.08)),
+    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0 2px, transparent 2px 8px);
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.punk-section--dark > * {
+  position: relative;
+  z-index: 1;
+}
+
+.punk-section--light {
+  position: relative;
+  z-index: 1;
+}
+
+.punk-section--light::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(24rem 24rem at 80% 20%, rgba(0, 240, 255, 0.18), transparent 60%),
+    repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.05) 0 2px, transparent 2px 12px);
+  opacity: 0.45;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.punk-section--light > * {
+  position: relative;
+  z-index: 1;
+}
+
+.punk-card {
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.35);
+}
+
+.punk-footer {
+  position: relative;
+  z-index: 1;
+}
+
 /* Hide scrollbar but keep functionality */
 ::-webkit-scrollbar {
   width: 8px;

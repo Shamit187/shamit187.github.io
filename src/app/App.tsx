@@ -19,14 +19,14 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen punk-theme">
       <HeroSection />
       <BioSection />
       <PublicationsSection />
       <TimelineSection />
       
       {/* Footer */}
-      <footer className="bg-black py-12 border-t-4 border-[#E60012]" data-animate="fade-up">
+      <footer className="bg-black py-12 border-t-4 border-[#E60012] punk-footer" data-animate="fade-up">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="text-white/60 text-sm">
