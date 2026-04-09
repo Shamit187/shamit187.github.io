@@ -107,6 +107,14 @@ h1, h2, h3, h4, h5, h6 {
     .hero-grid {
         grid-template-columns: 1fr 1fr;
     }
+
+    .hero-grid--swap .hero-text {
+        order: 2;
+    }
+
+    .hero-grid--swap .hero-photo-wrapper {
+        order: 1;
+    }
 }
 
 .hero-text {
